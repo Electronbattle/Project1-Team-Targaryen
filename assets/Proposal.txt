@@ -1,0 +1,27 @@
+Project Title - Wanna Get Away? ;)
+
+Team Members & Breakdown of Tasks -
+
+TeamLead-   Reggie - Jquery/API
+            Andrew - Api/Firebase
+            Aaron - Html/ CSS bootstrap
+            Ivana - Html/CSS/Jquery
+            Ally - HTML CSS Bootstrap 
+
+Project Description -
+    Travel site that has images and summaries of different places around the world, allows you to comment on the photos and the summaries. Will show different types of famous places, ex: tropical beaches, urban jungles, mountains, forests etc.
+
+
+
+Sketch of Final Product -
+
+Apis Used -
+
+pixabay - image source (link: https://pixabay.com/api/docs/#api_search_images) 
+    api key = 12044266-b36e8c39536f87a671582df76
+    Example: https://pixabay.com/api/?key=12044266-b36e8c39536f87a671582df76&q=yellow+flowers&image_type=photo
+    
+goibibo - travel information
+current weather in place - https://openweathermap.org/api
+
+
