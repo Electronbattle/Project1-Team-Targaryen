@@ -30,7 +30,8 @@
 
   <body>
     <div class="jumbotron text-center">
-      <h1 class="display-4" id="destination">Tropical Beaches</h1>
+      <h1 class="display-3" id="destination">
+          <br>Tropical Beaches</h1>
       <div class="btn-group mt-5">
         <button
           type="button"
@@ -54,7 +55,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-md-6">
-          <div class="card" style="width: 25rem;">
+          <div class="card">
             <h5 class="card-header" id="header-one">Monkey Beach</h5>
             <div id="carousel-1" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -139,7 +140,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card float-right" style="width: 25rem;">
+          <div class="card" id="card-2">
             <h5 class="card-header" id="header-two">Turtle Beach</h5>
             <div id="carousel-2" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -227,7 +228,7 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="card" style="width: 25rem;">
+          <div class="card">
             <h5 class="card-header" id="header-three">Blue Lagoon</h5>
             <div
               id="carousel-3"
@@ -302,8 +303,9 @@
             </div>
             <div class="card-body">
               <p class="card-text" id="summary-three">
+                  <div id="weather-three"></div>
                 The Carpathian Mountains form a 1,500km-long range in Central
-                and Eastern Europe. They stretch west to east in an arc from the
+                and Eastern Europe. They stretch west to east<span id="dots-3">...</span><span id="more-3">in an arc from the
                 Czech Republic to Romania. The Tatra range between Slovakia and
                 Poland is a national park and has several peaks above 2,400
                 meters. More than half of the Carpathian range lies in Romania,
@@ -315,12 +317,13 @@
                 Area: 73,359 mi²
                 <br />
                 Highest point: Gerlachovský štít
-              </p>
+              </span></p>
+              <button onclick="showmoreFunctionthree()" id="show-more-3">Read more</button>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card float-right" style="width: 25rem;">
+          <div class="card" id="card-2">
             <h5 class="card-header" id="header-four">Boracay White Beach</h5>
             <div
               id="carousel-4"
@@ -395,8 +398,9 @@
             </div>
             <div class="card-body">
               <p class="card-text" id="summary-four">
+                  <div id="weather-four"></div>
                 El Capitan is a vertical rock formation in Yosemite National
-                Park, located on the north side of Yosemite Valley, near its
+                Park, located on the north side of Yosemite Valley,<span id="dots-4">...</span><span id="more-4">near its
                 western end. The granite monolith is about 3,000 feet from base
                 to summit along its tallest face, and is a popular objective for
                 rock climbers.
@@ -409,14 +413,15 @@
                 Location: Mariposa County, California, U.S.
                 <br />
                 Easiest route: Hiking
-              </p>
+              </span></p>
+              <button onclick="showmoreFunctionfour()" id="show-more-4">Read more</button>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="card" style="width: 25rem;">
+          <div class="card">
             <h5 class="card-header" id="header-five">Seychelles</h5>
             <div
               id="carousel-5"
@@ -491,8 +496,9 @@
             </div>
             <div class="card-body">
               <p class="card-text" id="summary-five">
+                  <div id="weather-five"></div>
                 The Himalayas, or Himalaya, form a mountain range in Asia,
-                separating the plains of the Indian subcontinent from the
+                separating the plains of the Indian<span id="dots-5">...</span><span id="more-5"> subcontinent from the
                 Tibetan Plateau. The Himalayan range has many of the Earth's
                 highest peaks, including the highest, Mount Everest.
                 <br />
@@ -504,12 +510,13 @@
                 State/Province: Asia
                 <br />
                 Length: 2,400 km (1,500 mi)
-              </p>
+              </span></p>
+              <button onclick="showmoreFunctionfive()" id="show-more-5">Read more</button>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card float-right" style="width: 25rem;">
+          <div class="card" id="card-2">
             <h5 class="card-header" id="header-six">Bali</h5>
             <div
               id="carousel-6"
@@ -584,8 +591,9 @@
             </div>
             <div class="card-body">
               <p class="card-text" id="summary-six">
+                  <div id="weather-six"></div>
                 The Pyrenees mountain range separates the Iberian Peninsula from
-                the rest of Europe, stretching more than 430km between Spain and
+                the rest of Europe, stretching more than 430km between<span id="dots-6">...</span><span id="more-6">Spain and
                 France and rising higher than 3,400m in elevation. Hiking trails
                 traverse the entire length of the range and national parks offer
                 shorter trails, while dozens of ski resorts can be found on both
@@ -598,12 +606,14 @@
                 Highest point: Aneto
                 <br />
                 Length: 491 km (305 mi)
-              </p>
+             </span></p>
+             <button onclick="showmoreFunctionsix()" id="show-more-6">Read more</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>Copyright&copy;</footer>
     <script src="assets/destinations.js"></script>
   </body>
 </html>

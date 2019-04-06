@@ -1,20 +1,35 @@
+.jumbotron {
+  background-image: url("assets/ian-dooley-280928-unsplash.jpg");
+  background-size: cover;
+  color: solid black;
+  text-shadow: 2px 2px 4px white;
+}
+
 .card {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  background: lightgray;
+}
+
+#card-2 {
+  float: right;
 }
 
 body {
-  background: #525252; /* fallback for old browsers */
+  background: #e6dada; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #3d72b4,
-    #525252
+    to bottom,
+    #274046,
+    #e6dada
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #3d72b4,
-    #525252
+    to bottom,
+    #274046,
+    #e6dada
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
 }
 
 .card {
@@ -22,6 +37,35 @@ body {
 }
 
 #more,
-#more-2 {
+#more-2,
+#more-3,
+#more-4,
+#more-5,
+#more-6 {
   display: none;
+}
+
+@media screen and (max-width: 640px) {
+  #card-2 {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #card-2 {
+    float: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  #card-2 {
+    float: none;
+  }
+}
+
+footer {
+  background-color: rgb(54, 54, 54);
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+  color: white;
 }
