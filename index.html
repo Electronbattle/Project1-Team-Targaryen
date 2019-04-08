@@ -45,9 +45,10 @@
                         Choose Your Adventure
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Tropical Beaches</a>
-                        <a class="dropdown-item" href="#">Urban Jungles</a>
-                        <a class="dropdown-item" href="#">Mountain Hikes</a>
+                        <a onclick="return populatePicturesEntry('beach');"id="beach" class="dropdown-item">Tropical Beaches</a>
+                        <a onclick="return populatePicturesEntry('urban');"id="urban" class="dropdown-item">Urban Jungles</a>
+                        <a onclick="return populatePicturesEntry('mountain');"id="mountain" class="dropdown-item">Mountain Hikes</a>
+
 
                     </div>
                 </div>
@@ -102,7 +103,9 @@
         <!-- </div> -->
 
         <!-- </div> -->
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/script/homePage.js"></script>
+        <script src="assets/destinations.js"></script>
 </body>
 
 </html>
