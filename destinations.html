@@ -17,8 +17,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- Material Design Bootstrap -->
-  <link href="/assets/modalassets/mdb.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="assets/modalassets/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="destination.css" />
   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <!-- FireBase Reference -->
@@ -35,9 +35,9 @@
         Choose Your Adventure
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Tropical Beaches</a>
-        <a class="dropdown-item" href="#">Urban Jungles</a>
-        <a class="dropdown-item" href="#">Mountain Hikes</a>
+        <a onclick="return populatePicturesEntry('beach');" id="beach" class="dropdown-item">Tropical Beaches</a>
+        <a onclick="return populatePicturesEntry('urban');" id="urban" class="dropdown-item">Urban Jungles</a>
+        <a onclick="return populatePicturesEntry('mountain');" id="mountain" class="dropdown-item">Mountain Hikes</a>
       </div>
     </div>
     <p class="lead"></p>
@@ -47,7 +47,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <h5 class="card-header" id="header-one">Monkey Beach
+          <h5 class="card-header" id="header-0">Monkey Beach
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
@@ -160,13 +160,34 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" id="carousel-one-1" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
+                <img class="d-block w-100" id="carousel-0-0" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-one-2" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
+                <img class="d-block w-100" id="carousel-0-1" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-one-3" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+                <img class="d-block w-100" id="carousel-0-2" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-0-3" src="assets/monkey-beach.jpg.jpg" alt="Fourth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-0-4" src="assets/monkey-beach.jpg.jpg" alt="Fifth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-0-5" src="assets/monkey-beach.jpg.jpg" alt="Sixth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-0-6" src="assets/monkey-beach.jpg.jpg" alt="Seventh slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-0-7" src="assets/monkey-beach.jpg.jpg" alt="Eighth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-0-8" src="assets/monkey-beach.jpg.jpg" alt="Ninth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-0-9" src="assets/monkey-beach.jpg.jpg" alt="Tenth slide" />
               </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
@@ -178,32 +199,19 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="card-body">
-            <p class="card-text" id="summary-one">
-              <div id="weather-one"></div>
-              The Rocky Mountains stretch some 3,000 miles from British
-              Columbia and Alberta in Canada through Idaho, Montana,<span id="dots">...</span><span id="more"> Wyoming,
-                Colorado, and down to New Mexico in the U.S. The range offers
-                dramatic wilderness, diverse wildlife and alpine lakes.
-                Colorado’s Rocky Mountain National Park is traversed by numerous
-                hiking trails and the famously scenic Trail Ridge Road, a
-                48-mile highway that reaches a high point of 12,183ft.
-                <br />
-                <br />
-                Elevation: 14,439′ Area: 382,894 mi²
-                <br />
-                Highest point: Mount Elbert
-                <br />
-                Length: 4,800 km (3,000 mi)
-              </span>
-            </p><button onclick="showmoreFunction()" id="show-more">Read more</button>
+          <div class="card-body"id="cardbody-0">
+            <p class="card-text" id="summary-0">
+              <div id="weather-0"></div>
+                
+              
+            </p>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card" id="card-2">
-          <h5 class="card-header" id="header-two">Turtle Beach
-            
+          <h5 class="card-header" id="header-1">Turtle Beach
+
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
@@ -315,13 +323,34 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" id="carousel-two-1" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
+                <img class="d-block w-100" id="carousel-1-0" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-two-2" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
+                <img class="d-block w-100" id="carousel-1-1" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-two-3" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+                <img class="d-block w-100" id="carousel-1-2" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-1-3" src="assets/monkey-beach.jpg.jpg" alt="Fourth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-1-4" src="assets/monkey-beach.jpg.jpg" alt="Fifth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-1-5" src="assets/monkey-beach.jpg.jpg" alt="Sixth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-1-6" src="assets/monkey-beach.jpg.jpg" alt="Seventh slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-1-7" src="assets/monkey-beach.jpg.jpg" alt="Eighth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-1-8" src="assets/monkey-beach.jpg.jpg" alt="Ninth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-1-9" src="assets/monkey-beach.jpg.jpg" alt="Tenth slide" />
               </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
@@ -333,27 +362,11 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="card-body">
-            <p class="card-text" id="summary-two">
-              <div id="weather-two"></div>
-              The Alps are the highest and most extensive mountain range
-              system that lies entirely in Europe, separating Southern from<span id="dots-2">...</span><span
-                id="more-2">
-                Central and Western Europe and stretching approximately 1,200
-                kilometres across eight Alpine countries: France, Switzerland,
-                Italy, Monaco, Liechtenstein, Austria, Germany, and Slovenia.
-                <br />
-                <br />
-                Elevation: 15,781′
-                <br />
-                Area: 115,108 mi²
-                <br />
-                Highest point: Mont Blanc
-                <br />
-                Length: 1,200 km (750 mi)
-              </span>
+          <div class="card-body" id="cardbody-1">
+            <p class="card-text" id="summary-1">
+              <div id="weather-1"></div>
+                
             </p>
-            <button onclick="showmoreFunctiontwo()" id="show-more-2">Read more</button>
           </div>
         </div>
       </div>
@@ -361,110 +374,110 @@
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <h5 class="card-header" id="header-three">Blue Lagoon
-              <span>
-                  <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
-                    data-target="#beach">
-                    <i class="fas fa-comments  fa-lg float-right"></i>
-                  </button>
-                </span>
-                <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                  aria-hidden="true">
-                  <!--Modals Start position -->
-                  <div class="modal-dialog modal-full-height modal-right" role="document">
-                    <div class="modal-content">
-                      <!-- Section:-->
-                      <section class=" ">
-                        <!-- Grid row -->
-                        <div class="row">
-                          <!-- Grid column -->
-                          <div class="col-12">
-                            <!-- Card -->
-                            <div class="card news-card">
-                              <!-- Heading-->
-                              <div class="modal-header">
-                                <div class="card-body">
-                                  <div class="content">
-                                    <div class="right-side-meta"><button type="button" class="close  " data-dismiss="modal"
-                                        aria-label="Close">
-                                        <span aria-hidden="false" class="rounded grey lighten-3 px-2 hoverable "
-                                          style="border-radius:100% !important">&times;</span>
-                                      </button>
-                                      <h2 class="h2 modal-title display-5" id="commentModalLabel">Comments</h2>
-                                    </div>
-    
-                                  </div>
+          <h5 class="card-header" id="header-2">Blue Lagoon
+            <span>
+              <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
+                data-target="#beach">
+                <i class="fas fa-comments  fa-lg float-right"></i>
+              </button>
+            </span>
+            <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <!--Modals Start position -->
+              <div class="modal-dialog modal-full-height modal-right" role="document">
+                <div class="modal-content">
+                  <!-- Section:-->
+                  <section class=" ">
+                    <!-- Grid row -->
+                    <div class="row">
+                      <!-- Grid column -->
+                      <div class="col-12">
+                        <!-- Card -->
+                        <div class="card news-card">
+                          <!-- Heading-->
+                          <div class="modal-header">
+                            <div class="card-body">
+                              <div class="content">
+                                <div class="right-side-meta"><button type="button" class="close  " data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="false" class="rounded grey lighten-3 px-2 hoverable "
+                                      style="border-radius:100% !important">&times;</span>
+                                  </button>
+                                  <h2 class="h2 modal-title display-5" id="commentModalLabel">Comments</h2>
                                 </div>
-    
+
                               </div>
-                              <!-- Comments FireBase Data-store loc-->
-                              <div id="commentContainer" class="list-group-item comment user-comment">
-    
-                                <div class="row mb-4">
-                                  <!--Image column-->
-                                  <div class="col-sm-2 col-12 mb-md-0 mb-3">
-                                    <img src="assets/images/motherOfDragons.png" style="width: 80px; height: auto;"
-                                      class="avatar rounded-circle z-depth-1-half" aria-hidden="true" />
-                                  </div>
-                                  <!--/.Image column-->
-                                  <!--Content column-->
-                                  <div class="col-sm-10 col-12">
-                                    <a>
-                                      <h4 class="font-weight-bold">Daenerys Targaryen</h4>
-                                    </a>
-                                    <div class="mt-2">
-                                      <ul class="list-unstyled">Blue Lagoon
-                                        <li class="comment-date h6 font-weight-light"><i class="fas fa-clock"></i>
-                                          05/10/2015</li>
-                                      </ul>
-                                    </div>
-                                    <p class="h6 text-justify">Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                      laboris
-                                      nisi ut aliquip
-                                      ex ea commodo
-                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                      dolore eu
-                                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                                  </div>
-                                  <!--/.Content column-->
-                                </div>
-                                <hr>
-                                <!-- Card content -->
-                                <div class="card-body">
-                                  <!-- Experience meta-->
-                                  <div class="social-meta">
-                                    <p>How was your adventure? </p>
-                                    <span><i class="far fa-heart"></i>10 likes</span>
-                                    <p><i class="fas fa-heart-broken"></i>1 dislikes</p>
-                                  </div>
-                                  <!-- modal data input  -->
-                                  <input type="text" class="form-control userName" placeholder="Name" id="user-name">
-                                  <input type="text" class="form-control userLocation" placeholder="Specific Location"
-                                    id="user-location">
-                                  <textarea placeholder="Write your comment here" name="comment" type="text"
-                                    id="comment-text" style="width: 100%" class="form-control commentText"
-                                    placeholder="Add Comment Here">
-                              </textarea>
-                                  <!-- Comment input -->
-                                  <div class="col-12 justify-content-center">
-                                    <button type="button" class="col-12 btn btn-blue-grey fluid" id="postComment"><i
-                                        class="fas fa-comment-dots"></i> Post a Comment </button>
-                                    <button type="button" class="col-12 btn black-text grey lighten-2"
-                                      data-dismiss="modal"><i class="fas fa-close"></i> Close</button><br>
-                                  </div>
-                                </div>
-                                <!-- .Card content -->
-                              </div>
-                              <!-- .Card -->
                             </div>
-                            <!-- .Grid column -->
+
                           </div>
-                          <!-- .Grid row -->
-                      </section>
-                    </div>
-                  </div>
+                          <!-- Comments FireBase Data-store loc-->
+                          <div id="commentContainer" class="list-group-item comment user-comment">
+
+                            <div class="row mb-4">
+                              <!--Image column-->
+                              <div class="col-sm-2 col-12 mb-md-0 mb-3">
+                                <img src="assets/images/motherOfDragons.png" style="width: 80px; height: auto;"
+                                  class="avatar rounded-circle z-depth-1-half" aria-hidden="true" />
+                              </div>
+                              <!--/.Image column-->
+                              <!--Content column-->
+                              <div class="col-sm-10 col-12">
+                                <a>
+                                  <h4 class="font-weight-bold">Daenerys Targaryen</h4>
+                                </a>
+                                <div class="mt-2">
+                                  <ul class="list-unstyled">Blue Lagoon
+                                    <li class="comment-date h6 font-weight-light"><i class="fas fa-clock"></i>
+                                      05/10/2015</li>
+                                  </ul>
+                                </div>
+                                <p class="h6 text-justify">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                  laboris
+                                  nisi ut aliquip
+                                  ex ea commodo
+                                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                  dolore eu
+                                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                              </div>
+                              <!--/.Content column-->
+                            </div>
+                            <hr>
+                            <!-- Card content -->
+                            <div class="card-body">
+                              <!-- Experience meta-->
+                              <div class="social-meta">
+                                <p>How was your adventure? </p>
+                                <span><i class="far fa-heart"></i>10 likes</span>
+                                <p><i class="fas fa-heart-broken"></i>1 dislikes</p>
+                              </div>
+                              <!-- modal data input  -->
+                              <input type="text" class="form-control userName" placeholder="Name" id="user-name">
+                              <input type="text" class="form-control userLocation" placeholder="Specific Location"
+                                id="user-location">
+                              <textarea placeholder="Write your comment here" name="comment" type="text"
+                                id="comment-text" style="width: 100%" class="form-control commentText"
+                                placeholder="Add Comment Here">
+                              </textarea>
+                              <!-- Comment input -->
+                              <div class="col-12 justify-content-center">
+                                <button type="button" class="col-12 btn btn-blue-grey fluid" id="postComment"><i
+                                    class="fas fa-comment-dots"></i> Post a Comment </button>
+                                <button type="button" class="col-12 btn black-text grey lighten-2"
+                                  data-dismiss="modal"><i class="fas fa-close"></i> Close</button><br>
+                              </div>
+                            </div>
+                            <!-- .Card content -->
+                          </div>
+                          <!-- .Card -->
+                        </div>
+                        <!-- .Grid column -->
+                      </div>
+                      <!-- .Grid row -->
+                  </section>
                 </div>
-               </h5>
+              </div>
+            </div>
+          </h5>
           <div id="carousel-3" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
@@ -473,13 +486,34 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" id="carousel-three-1" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
+                <img class="d-block w-100" id="carousel-2-0" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-three-2" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
+                <img class="d-block w-100" id="carousel-2-1" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-three-3" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+                <img class="d-block w-100" id="carousel-2-2" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-2-3" src="assets/monkey-beach.jpg.jpg" alt="Fourth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-2-4" src="assets/monkey-beach.jpg.jpg" alt="Fifth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-2-5" src="assets/monkey-beach.jpg.jpg" alt="Sixth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-2-6" src="assets/monkey-beach.jpg.jpg" alt="Seventh slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-2-7" src="assets/monkey-beach.jpg.jpg" alt="Eighth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-2-8" src="assets/monkey-beach.jpg.jpg" alt="Ninth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-2-9" src="assets/monkey-beach.jpg.jpg" alt="Tenth slide" />
               </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-3
@@ -492,32 +526,18 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="card-body">
-            <p class="card-text" id="summary-three">
-              <div id="weather-three"></div>
-              The Carpathian Mountains form a 1,500km-long range in Central
-              and Eastern Europe. They stretch west to east<span id="dots-3">...</span><span id="more-3">in an arc from
-                the
-                Czech Republic to Romania. The Tatra range between Slovakia and
-                Poland is a national park and has several peaks above 2,400
-                meters. More than half of the Carpathian range lies in Romania,
-                where spruce forests are home to brown bears, wolves and lynxes.
-                <br />
-                <br />
-                Elevation: 8,711′
-                <br />
-                Area: 73,359 mi²
-                <br />
-                Highest point: Gerlachovský štít
-              </span>
+          <div class="card-body" id="cardbody-2">
+            <p class="card-text" id="summary-2">
+              <div id="weather-2"></div>
+              
             </p>
-            <button onclick="showmoreFunctionthree()" id="show-more-3">Read more</button>
+            
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card" id="card-2">
-          <h5 class="card-header" id="header-four">Boracay White Beach
+          <h5 class="card-header" id="header-3">Boracay White Beach
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
@@ -621,7 +641,7 @@
               </div>
             </div>
           </h5>
-          
+
           <div id="carousel-4" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carousel-4" data-slide-to="0" class="active"></li>
@@ -630,13 +650,34 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" id="carousel-four-1" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
+                <img class="d-block w-100" id="carousel-3-0" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-four-2" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
+                <img class="d-block w-100" id="carousel-3-1" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-four-3" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+                <img class="d-block w-100" id="carousel-3-2" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-3-3" src="assets/monkey-beach.jpg.jpg" alt="Fourth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-3-4" src="assets/monkey-beach.jpg.jpg" alt="Fifth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-3-5" src="assets/monkey-beach.jpg.jpg" alt="Sixth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-3-6" src="assets/monkey-beach.jpg.jpg" alt="Seventh slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-3-7" src="assets/monkey-beach.jpg.jpg" alt="Eighth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-3-8" src="assets/monkey-beach.jpg.jpg" alt="Ninth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-3-9" src="assets/monkey-beach.jpg.jpg" alt="Tenth slide" />
               </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev">
@@ -648,26 +689,13 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="card-body">
-            <p class="card-text" id="summary-four">
-              <div id="weather-four"></div>
-              El Capitan is a vertical rock formation in Yosemite National
-              Park, located on the north side of Yosemite Valley,<span id="dots-4">...</span><span id="more-4">near its
-                western end. The granite monolith is about 3,000 feet from base
-                to summit along its tallest face, and is a popular objective for
-                rock climbers.
-                <br />
-                <br />
-                Elevation: 7,569′
-                <br />
-                First ascent: November 12, 1958
-                <br />
-                Location: Mariposa County, California, U.S.
-                <br />
-                Easiest route: Hiking
-              </span>
+          <div class="card-body" id="cardbody-3">
+            <p class="card-text" id="summary-3">
+              <div id="weather-3"></div>
+              
+                
             </p>
-            <button onclick="showmoreFunctionfour()" id="show-more-4">Read more</button>
+            
           </div>
         </div>
       </div>
@@ -675,110 +703,110 @@
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <h5 class="card-header" id="header-five">Seychelles
-              <span>
-                  <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
-                    data-target="#beach">
-                    <i class="fas fa-comments  fa-lg float-right"></i>
-                  </button>
-                </span>
-                <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                  aria-hidden="true">
-                  <!--Modals Start position -->
-                  <div class="modal-dialog modal-full-height modal-right" role="document">
-                    <div class="modal-content">
-                      <!-- Section:-->
-                      <section class=" ">
-                        <!-- Grid row -->
-                        <div class="row">
-                          <!-- Grid column -->
-                          <div class="col-12">
-                            <!-- Card -->
-                            <div class="card news-card">
-                              <!-- Heading-->
-                              <div class="modal-header">
-                                <div class="card-body">
-                                  <div class="content">
-                                    <div class="right-side-meta"><button type="button" class="close  " data-dismiss="modal"
-                                        aria-label="Close">
-                                        <span aria-hidden="false" class="rounded grey lighten-3 px-2 hoverable "
-                                          style="border-radius:100% !important">&times;</span>
-                                      </button>
-                                      <h2 class="h2 modal-title display-5" id="commentModalLabel">Comments</h2>
-                                    </div>
-    
-                                  </div>
+          <h5 class="card-header" id="header-4">Seychelles
+            <span>
+              <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
+                data-target="#beach">
+                <i class="fas fa-comments  fa-lg float-right"></i>
+              </button>
+            </span>
+            <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <!--Modals Start position -->
+              <div class="modal-dialog modal-full-height modal-right" role="document">
+                <div class="modal-content">
+                  <!-- Section:-->
+                  <section class=" ">
+                    <!-- Grid row -->
+                    <div class="row">
+                      <!-- Grid column -->
+                      <div class="col-12">
+                        <!-- Card -->
+                        <div class="card news-card">
+                          <!-- Heading-->
+                          <div class="modal-header">
+                            <div class="card-body">
+                              <div class="content">
+                                <div class="right-side-meta"><button type="button" class="close  " data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="false" class="rounded grey lighten-3 px-2 hoverable "
+                                      style="border-radius:100% !important">&times;</span>
+                                  </button>
+                                  <h2 class="h2 modal-title display-5" id="commentModalLabel">Comments</h2>
                                 </div>
-    
+
                               </div>
-                              <!-- Comments FireBase Data-store loc-->
-                              <div id="commentContainer" class="list-group-item comment user-comment">
-    
-                                <div class="row mb-4">
-                                  <!--Image column-->
-                                  <div class="col-sm-2 col-12 mb-md-0 mb-3">
-                                    <img src="assets/images/motherOfDragons.png" style="width: 80px; height: auto;"
-                                      class="avatar rounded-circle z-depth-1-half" aria-hidden="true" />
-                                  </div>
-                                  <!--/.Image column-->
-                                  <!--Content column-->
-                                  <div class="col-sm-10 col-12">
-                                    <a>
-                                      <h4 class="font-weight-bold">Daenerys Targaryen</h4>
-                                    </a>
-                                    <div class="mt-2">
-                                      <ul class="list-unstyled">Seychelles
-                                        <li class="comment-date h6 font-weight-light"><i class="fas fa-clock"></i>
-                                          05/10/2015</li>
-                                      </ul>
-                                    </div>
-                                    <p class="h6 text-justify">Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                      laboris
-                                      nisi ut aliquip
-                                      ex ea commodo
-                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                      dolore eu
-                                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                                  </div>
-                                  <!--/.Content column-->
-                                </div>
-                                <hr>
-                                <!-- Card content -->
-                                <div class="card-body">
-                                  <!-- Experience meta-->
-                                  <div class="social-meta">
-                                    <p>How was your adventure? </p>
-                                    <span><i class="far fa-heart"></i>10 likes</span>
-                                    <p><i class="fas fa-heart-broken"></i>1 dislikes</p>
-                                  </div>
-                                  <!-- modal data input  -->
-                                  <input type="text" class="form-control userName" placeholder="Name" id="user-name">
-                                  <input type="text" class="form-control userLocation" placeholder="Specific Location"
-                                    id="user-location">
-                                  <textarea placeholder="Write your comment here" name="comment" type="text"
-                                    id="comment-text" style="width: 100%" class="form-control commentText"
-                                    placeholder="Add Comment Here">
-                              </textarea>
-                                  <!-- Comment input -->
-                                  <div class="col-12 justify-content-center">
-                                    <button type="button" class="col-12 btn btn-blue-grey fluid" id="postComment"><i
-                                        class="fas fa-comment-dots"></i> Post a Comment </button>
-                                    <button type="button" class="col-12 btn black-text grey lighten-2"
-                                      data-dismiss="modal"><i class="fas fa-close"></i> Close</button><br>
-                                  </div>
-                                </div>
-                                <!-- .Card content -->
-                              </div>
-                              <!-- .Card -->
                             </div>
-                            <!-- .Grid column -->
+
                           </div>
-                          <!-- .Grid row -->
-                      </section>
-                    </div>
-                  </div>
+                          <!-- Comments FireBase Data-store loc-->
+                          <div id="commentContainer" class="list-group-item comment user-comment">
+
+                            <div class="row mb-4">
+                              <!--Image column-->
+                              <div class="col-sm-2 col-12 mb-md-0 mb-3">
+                                <img src="assets/images/motherOfDragons.png" style="width: 80px; height: auto;"
+                                  class="avatar rounded-circle z-depth-1-half" aria-hidden="true" />
+                              </div>
+                              <!--/.Image column-->
+                              <!--Content column-->
+                              <div class="col-sm-10 col-12">
+                                <a>
+                                  <h4 class="font-weight-bold">Daenerys Targaryen</h4>
+                                </a>
+                                <div class="mt-2">
+                                  <ul class="list-unstyled">Seychelles
+                                    <li class="comment-date h6 font-weight-light"><i class="fas fa-clock"></i>
+                                      05/10/2015</li>
+                                  </ul>
+                                </div>
+                                <p class="h6 text-justify">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                  laboris
+                                  nisi ut aliquip
+                                  ex ea commodo
+                                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                  dolore eu
+                                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                              </div>
+                              <!--/.Content column-->
+                            </div>
+                            <hr>
+                            <!-- Card content -->
+                            <div class="card-body">
+                              <!-- Experience meta-->
+                              <div class="social-meta">
+                                <p>How was your adventure? </p>
+                                <span><i class="far fa-heart"></i>10 likes</span>
+                                <p><i class="fas fa-heart-broken"></i>1 dislikes</p>
+                              </div>
+                              <!-- modal data input  -->
+                              <input type="text" class="form-control userName" placeholder="Name" id="user-name">
+                              <input type="text" class="form-control userLocation" placeholder="Specific Location"
+                                id="user-location">
+                              <textarea placeholder="Write your comment here" name="comment" type="text"
+                                id="comment-text" style="width: 100%" class="form-control commentText"
+                                placeholder="Add Comment Here">
+                              </textarea>
+                              <!-- Comment input -->
+                              <div class="col-12 justify-content-center">
+                                <button type="button" class="col-12 btn btn-blue-grey fluid" id="postComment"><i
+                                    class="fas fa-comment-dots"></i> Post a Comment </button>
+                                <button type="button" class="col-12 btn black-text grey lighten-2"
+                                  data-dismiss="modal"><i class="fas fa-close"></i> Close</button><br>
+                              </div>
+                            </div>
+                            <!-- .Card content -->
+                          </div>
+                          <!-- .Card -->
+                        </div>
+                        <!-- .Grid column -->
+                      </div>
+                      <!-- .Grid row -->
+                  </section>
                 </div>
-              </h5>
+              </div>
+            </div>
+          </h5>
           </h5>
           <div id="carousel-5" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -788,13 +816,34 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" id="carousel-five-1" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
+                <img class="d-block w-100" id="carousel-4-0" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-five-2" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
+                <img class="d-block w-100" id="carousel-4-1" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-five-3" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+                <img class="d-block w-100" id="carousel-4-2" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-4-3" src="assets/monkey-beach.jpg.jpg" alt="Fourth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-4-4" src="assets/monkey-beach.jpg.jpg" alt="Fifth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-4-5" src="assets/monkey-beach.jpg.jpg" alt="Sixth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-4-6" src="assets/monkey-beach.jpg.jpg" alt="Seventh slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-4-7" src="assets/monkey-beach.jpg.jpg" alt="Eighth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-4-8" src="assets/monkey-beach.jpg.jpg" alt="Ninth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-4-9" src="assets/monkey-beach.jpg.jpg" alt="Tenth slide" />
               </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
@@ -806,134 +855,122 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="card-body">
-            <p class="card-text" id="summary-five">
-              <div id="weather-five"></div>
-              The Himalayas, or Himalaya, form a mountain range in Asia,
-              separating the plains of the Indian<span id="dots-5">...</span><span id="more-5"> subcontinent from the
-                Tibetan Plateau. The Himalayan range has many of the Earth's
-                highest peaks, including the highest, Mount Everest.
-                <br />
-                <br />
-                Elevation: 29,029′
-                <br />
-                Highest point: Mount Everest
-                <br />
-                State/Province: Asia
-                <br />
-                Length: 2,400 km (1,500 mi)
-              </span>
+          <div class="card-body" id="cardbody-4">
+            <p class="card-text" id="summary-4">
+              <div id="weather-4"></div>
+              
+               
             </p>
-            <button onclick="showmoreFunctionfive()" id="show-more-5">Read more</button>
+           
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card" id="card-2">
-          <h5 class="card-header" id="header-six">Bali
-              <span>
-                  <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
-                    data-target="#beach">
-                    <i class="fas fa-comments  fa-lg float-right"></i>
-                  </button>
-                </span>
-                <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                  aria-hidden="true">
-                  <!--Modals Start position -->
-                  <div class="modal-dialog modal-full-height modal-right" role="document">
-                    <div class="modal-content">
-                      <!-- Section:-->
-                      <section class=" ">
-                        <!-- Grid row -->
-                        <div class="row">
-                          <!-- Grid column -->
-                          <div class="col-12">
-                            <!-- Card -->
-                            <div class="card news-card">
-                              <!-- Heading-->
-                              <div class="modal-header">
-                                <div class="card-body">
-                                  <div class="content">
-                                    <div class="right-side-meta"><button type="button" class="close  " data-dismiss="modal"
-                                        aria-label="Close">
-                                        <span aria-hidden="false" class="rounded grey lighten-3 px-2 hoverable "
-                                          style="border-radius:100% !important">&times;</span>
-                                      </button>
-                                      <h2 class="h2 modal-title display-5" id="commentModalLabel">Comments</h2>
-                                    </div>
-    
-                                  </div>
+          <h5 class="card-header" id="header-5">Bali
+            <span>
+              <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
+                data-target="#beach">
+                <i class="fas fa-comments  fa-lg float-right"></i>
+              </button>
+            </span>
+            <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <!--Modals Start position -->
+              <div class="modal-dialog modal-full-height modal-right" role="document">
+                <div class="modal-content">
+                  <!-- Section:-->
+                  <section class=" ">
+                    <!-- Grid row -->
+                    <div class="row">
+                      <!-- Grid column -->
+                      <div class="col-12">
+                        <!-- Card -->
+                        <div class="card news-card">
+                          <!-- Heading-->
+                          <div class="modal-header">
+                            <div class="card-body">
+                              <div class="content">
+                                <div class="right-side-meta"><button type="button" class="close  " data-dismiss="modal"
+                                    aria-label="Close">
+                                    <span aria-hidden="false" class="rounded grey lighten-3 px-2 hoverable "
+                                      style="border-radius:100% !important">&times;</span>
+                                  </button>
+                                  <h2 class="h2 modal-title display-5" id="commentModalLabel">Comments</h2>
                                 </div>
-    
+
                               </div>
-                              <!-- Comments FireBase Data-store loc-->
-                              <div id="commentContainer" class="list-group-item comment user-comment">
-    
-                                <div class="row mb-4">
-                                  <!--Image column-->
-                                  <div class="col-sm-2 col-12 mb-md-0 mb-3">
-                                    <img src="assets/images/motherOfDragons.png" style="width: 80px; height: auto;"
-                                      class="avatar rounded-circle z-depth-1-half" aria-hidden="true" />
-                                  </div>
-                                  <!--/.Image column-->
-                                  <!--Content column-->
-                                  <div class="col-sm-10 col-12">
-                                    <a>
-                                      <h4 class="font-weight-bold">Daenerys Targaryen</h4>
-                                    </a>
-                                    <div class="mt-2">
-                                      <ul class="list-unstyled">Bali
-                                        <li class="comment-date h6 font-weight-light"><i class="fas fa-clock"></i>
-                                          05/10/2015</li>
-                                      </ul>
-                                    </div>
-                                    <p class="h6 text-justify">Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                      laboris
-                                      nisi ut aliquip
-                                      ex ea commodo
-                                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                      dolore eu
-                                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                                  </div>
-                                  <!--/.Content column-->
-                                </div>
-                                <hr>
-                                <!-- Card content -->
-                                <div class="card-body">
-                                  <!-- Experience meta-->
-                                  <div class="social-meta">
-                                    <p>How was your adventure? </p>
-                                    <span><i class="far fa-heart"></i>10 likes</span>
-                                    <p><i class="fas fa-heart-broken"></i>1 dislikes</p>
-                                  </div>
-                                  <!-- modal data input  -->
-                                  <input type="text" class="form-control userName" placeholder="Name" id="user-name">
-                                  <input type="text" class="form-control userLocation" placeholder="Specific Location"
-                                    id="user-location">
-                                  <textarea placeholder="Write your comment here" name="comment" type="text"
-                                    id="comment-text" style="width: 100%" class="form-control commentText"
-                                    placeholder="Add Comment Here">
-                              </textarea>
-                                  <!-- Comment input -->
-                                  <div class="col-12 justify-content-center">
-                                    <button type="button" class="col-12 btn btn-blue-grey fluid" id="postComment"><i
-                                        class="fas fa-comment-dots"></i> Post a Comment </button>
-                                    <button type="button" class="col-12 btn black-text grey lighten-2"
-                                      data-dismiss="modal"><i class="fas fa-close"></i> Close</button><br>
-                                  </div>
-                                </div>
-                                <!-- .Card content -->
-                              </div>
-                              <!-- .Card -->
                             </div>
-                            <!-- .Grid column -->
+
                           </div>
-                          <!-- .Grid row -->
-                      </section>
-                    </div>
-                  </div>
+                          <!-- Comments FireBase Data-store loc-->
+                          <div id="commentContainer" class="list-group-item comment user-comment">
+
+                            <div class="row mb-4">
+                              <!--Image column-->
+                              <div class="col-sm-2 col-12 mb-md-0 mb-3">
+                                <img src="assets/images/motherOfDragons.png" style="width: 80px; height: auto;"
+                                  class="avatar rounded-circle z-depth-1-half" aria-hidden="true" />
+                              </div>
+                              <!--/.Image column-->
+                              <!--Content column-->
+                              <div class="col-sm-10 col-12">
+                                <a>
+                                  <h4 class="font-weight-bold">Daenerys Targaryen</h4>
+                                </a>
+                                <div class="mt-2">
+                                  <ul class="list-unstyled">Bali
+                                    <li class="comment-date h6 font-weight-light"><i class="fas fa-clock"></i>
+                                      05/10/2015</li>
+                                  </ul>
+                                </div>
+                                <p class="h6 text-justify">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                  laboris
+                                  nisi ut aliquip
+                                  ex ea commodo
+                                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                  dolore eu
+                                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                              </div>
+                              <!--/.Content column-->
+                            </div>
+                            <hr>
+                            <!-- Card content -->
+                            <div class="card-body">
+                              <!-- Experience meta-->
+                              <div class="social-meta">
+                                <p>How was your adventure? </p>
+                                <span><i class="far fa-heart"></i>10 likes</span>
+                                <p><i class="fas fa-heart-broken"></i>1 dislikes</p>
+                              </div>
+                              <!-- modal data input  -->
+                              <input type="text" class="form-control userName" placeholder="Name" id="user-name">
+                              <input type="text" class="form-control userLocation" placeholder="Specific Location"
+                                id="user-location">
+                              <textarea placeholder="Write your comment here" name="comment" type="text"
+                                id="comment-text" style="width: 100%" class="form-control commentText"
+                                placeholder="Add Comment Here">
+                              </textarea>
+                              <!-- Comment input -->
+                              <div class="col-12 justify-content-center">
+                                <button type="button" class="col-12 btn btn-blue-grey fluid" id="postComment"><i
+                                    class="fas fa-comment-dots"></i> Post a Comment </button>
+                                <button type="button" class="col-12 btn black-text grey lighten-2"
+                                  data-dismiss="modal"><i class="fas fa-close"></i> Close</button><br>
+                              </div>
+                            </div>
+                            <!-- .Card content -->
+                          </div>
+                          <!-- .Card -->
+                        </div>
+                        <!-- .Grid column -->
+                      </div>
+                      <!-- .Grid row -->
+                  </section>
                 </div>
-              </h5>
+              </div>
+            </div>
+          </h5>
           </h5>
           <div id="carousel-6" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -943,13 +980,34 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" id="carousel-six-1" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
+                <img class="d-block w-100" id="carousel-5-0" src="assets/monkey-beach.jpg.jpg" alt="First slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-six-2" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
+                <img class="d-block w-100" id="carousel-5-1" src="assets/monkey-beach.jpg.jpg" alt="Second slide" />
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" id="carousel-six-3" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+                <img class="d-block w-100" id="carousel-5-2" src="assets/monkey-beach.jpg.jpg" alt="Third slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-5-3" src="assets/monkey-beach.jpg.jpg" alt="Fourth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-5-4" src="assets/monkey-beach.jpg.jpg" alt="Fifth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-5-5" src="assets/monkey-beach.jpg.jpg" alt="Sixth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-5-6" src="assets/monkey-beach.jpg.jpg" alt="Seventh slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-5-7" src="assets/monkey-beach.jpg.jpg" alt="Eighth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-5-8" src="assets/monkey-beach.jpg.jpg" alt="Ninth slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" id="carousel-5-9" src="assets/monkey-beach.jpg.jpg" alt="Tenth slide" />
               </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-6" role="button" data-slide="prev">
@@ -961,27 +1019,12 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="card-body">
-            <p class="card-text" id="summary-six">
-              <div id="weather-six"></div>
-              The Pyrenees mountain range separates the Iberian Peninsula from
-              the rest of Europe, stretching more than 430km between<span id="dots-6">...</span><span id="more-6">Spain
-                and
-                France and rising higher than 3,400m in elevation. Hiking trails
-                traverse the entire length of the range and national parks offer
-                shorter trails, while dozens of ski resorts can be found on both
-                sides of the Pyrenees. Andorra is a tiny sovereign state in the
-                heart of the chain.
-                <br />
-                <br />
-                Elevation: 11,168′
-                <br />
-                Highest point: Aneto
-                <br />
-                Length: 491 km (305 mi)
-              </span>
+          <div class="card-body" id="cardbody-5">
+            <p class="card-text" id="summary-5">
+              <div id="weather-5"></div>
+             
             </p>
-            <button onclick="showmoreFunctionsix()" id="show-more-6">Read more</button>
+           
           </div>
         </div>
       </div>
@@ -989,8 +1032,11 @@
   </div>
   <footer>Copyright&copy;</footer>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="/assets/modalassets/js/mdb.min.js"></script>
-  <script src="/assets/modalassets/modalApp.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/script/homePage.js"></script>
+  <script src="assets/script/destinationsPage.js"></script>
+  <script type="text/javascript" src="assets/modalassets/mdb.min.js"></script>
+  <script src="assets/modalassets/modalApp.js"></script>
   <script src="assets/destinations.js"></script>
 </body>
 
