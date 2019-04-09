@@ -30,30 +30,28 @@
   <div class="jumbotron text-center">
     <h1 class="display-3" id="destination"><br>Tropical Beaches</h1>
     <div class="btn-group mt-5">
-      <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown" data-toggle="dropdown"
+      <button  onclick="location.href='index.html';" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         Choose Your Adventure
       </button>
-      <div class="dropdown-menu">
-        <a onclick="return populatePicturesEntry('beach');" id="beach" class="dropdown-item">Tropical Beaches</a>
-        <a onclick="return populatePicturesEntry('urban');" id="urban" class="dropdown-item">Urban Jungles</a>
-        <a onclick="return populatePicturesEntry('mountain');" id="mountain" class="dropdown-item">Mountain Hikes</a>
-      </div>
+      
     </div>
     <p class="lead"></p>
   </div>
 
   <div class="container text-center">
+    <div id="mapBait"></div>
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <h5 class="card-header" id="header-0">Monkey Beach
+          <h5 class="card-header">
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
                 <i class="fas fa-comments  fa-lg float-right"></i>
               </button>
             </span>
+            <p id="header-0">Monkey Beach</p>
             <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
               <!--Modals Start position -->
@@ -201,7 +199,15 @@
           </div>
           <div class="card-body"id="cardbody-0">
             <p class="card-text" id="summary-0">
-              <div id="weather-0"></div>
+              <div>
+                <img id="icon-0" src="http://openweathermap.org/img/w/10d.png">
+                 <p id="weather-0">Desciption: Cloudy </p>
+                 <p id="weather1-0">Current Weather: 10</p>
+                 <p id="weather2-0">High/Low</p>
+                 <p id="weather3-0">Humidity:</p>
+                 <p id="weather4-0">Windspeed</p>
+
+              </div>
                 
               
             </p>
@@ -210,13 +216,14 @@
       </div>
       <div class="col-md-6">
         <div class="card" id="card-2">
-          <h5 class="card-header" id="header-1">Turtle Beach
+          <h5 class="card-header">
 
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
                 <i class="fas fa-comments  fa-lg float-right"></i>
               </button>
+              <p id="header-1"></p>
             </span>
             <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
@@ -364,7 +371,14 @@
           </div>
           <div class="card-body" id="cardbody-1">
             <p class="card-text" id="summary-1">
-              <div id="weather-1"></div>
+              <div>
+                <img  id="icon-1" src="http://openweathermap.org/img/w/10d.png">
+                  <p id="weather-1">Desciption: Cloudy </p>
+                 <p id="weather1-1">Current Weather: 10</p>
+                 <p id="weather2-1">High/Low</p>
+                 <p id="weather3-1">Humidity:</p>
+                 <p id="weather4-1">Windspeed</p>
+              </div>
                 
             </p>
           </div>
@@ -374,13 +388,14 @@
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <h5 class="card-header" id="header-2">Blue Lagoon
+          <h5 class="card-header">
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
                 <i class="fas fa-comments  fa-lg float-right"></i>
               </button>
             </span>
+            <p id="header-2"></p>
             <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
               <!--Modals Start position -->
@@ -528,7 +543,14 @@
           </div>
           <div class="card-body" id="cardbody-2">
             <p class="card-text" id="summary-2">
-              <div id="weather-2"></div>
+              <div>
+                <img  id="icon-2" src="http://openweathermap.org/img/w/10d.png">
+                  <p id="weather-2">Desciption: Cloudy </p>
+                 <p id="weather1-2">Current Weather: 10</p>
+                 <p id="weather2-2">High/Low</p>
+                 <p id="weather3-2">Humidity:</p>
+                 <p id="weather4-2">Windspeed</p>
+              </div>
               
             </p>
             
@@ -537,13 +559,14 @@
       </div>
       <div class="col-md-6">
         <div class="card" id="card-2">
-          <h5 class="card-header" id="header-3">Boracay White Beach
+          <h5 class="card-header">
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
                 <i class="fas fa-comments  fa-lg float-right"></i>
               </button>
             </span>
+            <p id="header-3"></p>
             <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
               <!--Modals Start position -->
@@ -691,7 +714,14 @@
           </div>
           <div class="card-body" id="cardbody-3">
             <p class="card-text" id="summary-3">
-              <div id="weather-3"></div>
+              <div>
+                <img  id="icon-3" src="http://openweathermap.org/img/w/10d.png">
+                  <p id="weather-3">Desciption: Cloudy </p>
+                 <p id="weather1-3">Current Weather: 10</p>
+                 <p id="weather2-3">High/Low</p>
+                 <p id="weather3-3">Humidity:</p>
+                 <p id="weather4-3">Windspeed</p>
+              </div>
               
                 
             </p>
@@ -703,13 +733,14 @@
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <h5 class="card-header" id="header-4">Seychelles
+          <h5 class="card-header">
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
                 <i class="fas fa-comments  fa-lg float-right"></i>
               </button>
             </span>
+            <p id="header-4"></p>
             <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
               <!--Modals Start position -->
@@ -857,7 +888,14 @@
           </div>
           <div class="card-body" id="cardbody-4">
             <p class="card-text" id="summary-4">
-              <div id="weather-4"></div>
+              <div>
+                <img  id="icon-4" src="http://openweathermap.org/img/w/10d.png">
+                  <p id="weather-4">Desciption: Cloudy </p>
+                 <p id="weather1-4">Current Weather: 10</p>
+                 <p id="weather2-4">High/Low</p>
+                 <p id="weather3-4">Humidity:</p>
+                 <p id="weather4-4">Windspeed</p>
+              </div>
               
                
             </p>
@@ -867,13 +905,14 @@
       </div>
       <div class="col-md-6">
         <div class="card" id="card-2">
-          <h5 class="card-header" id="header-5">Bali
+          <h5 class="card-header">
             <span>
               <button type="button" class="btn btn-outline-blue-grey float-right" data-toggle="modal"
                 data-target="#beach">
                 <i class="fas fa-comments  fa-lg float-right"></i>
               </button>
             </span>
+            <p id="header-5"></p>
             <div class="modal fade right" id="beach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
               aria-hidden="true">
               <!--Modals Start position -->
@@ -1021,7 +1060,15 @@
           </div>
           <div class="card-body" id="cardbody-5">
             <p class="card-text" id="summary-5">
-              <div id="weather-5"></div>
+              <div>
+                  <img  id="icon-5" src="http://openweathermap.org/img/w/10d.png">
+                  <p id="weather-5">Desciption: Cloudy
+                     </p>
+                  <p id="weather1-5">Current Weather: 10</p>
+                  <p id="weather2-5">High/Low</p>
+                  <p id="weather3-5">Humidity:</p>
+                  <p id="weather4-5">Windspeed</p>
+              </div>
              
             </p>
            
@@ -1032,12 +1079,13 @@
   </div>
   <footer>Copyright&copy;</footer>
   <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyAEa3mcJXIQ3rK8EMHKHjEFCuXuw3KJT14&libraries=places"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/script/homePage.js"></script>
   <script src="assets/script/destinationsPage.js"></script>
-  <script type="text/javascript" src="assets/modalassets/mdb.min.js"></script>
-  <script src="assets/modalassets/modalApp.js"></script>
-  <script src="assets/destinations.js"></script>
+ <!--- <script type="text/javascript" src="assets/modalassets/mdb.min.js"></script>-->
+<!-- <script src="assets/modalassets/modalApp.js"></script> -->
+   <script src="assets/destinations.js"></script> 
 </body>
 
 </html>
