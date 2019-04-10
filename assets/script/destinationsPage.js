@@ -104,6 +104,9 @@ function populatePictures() {
 
 
 
+
+
+
                     //append correct weather to the location in HTML
 
 
@@ -166,7 +169,7 @@ function populatePictures() {
 
                     var photoReferenceInput = "photoreference=" + photoReference;
                     var SrcURLPhoto = baseURLPhotos + maxWidth + maxHeight + photoReferenceInput + apiKey;
-
+                    imageSelect.attr("class", "sizeDefault");
                     imageSelect.attr("src", SrcURLPhoto);
 
 
@@ -197,6 +200,16 @@ $(document).ready(function () {
             locationNames = beachNames;
             locationDestination.text("Tropical Beaches");
 
+            //append correct hotel buttons to card header
+            for (cardNumber = 0; cardNumber < 5; cardNumber++) {
+                // change the class names
+                var beachNamesHotel = ["#monkeyBeach", "#turtleBeach", "#blueLagoon", "#boracayBeach", "#seychelles","#blueBeach"]
+                var hotelButtonSelect = $("#hotelButton-" + cardNumber)
+                 $(hotelButtonSelect).attr("data-target", beachNamesHotel[cardNumber]);
+
+
+            };
+
 
             //code
             break;
@@ -207,6 +220,17 @@ $(document).ready(function () {
             locationNames = urbanJungleNames;
             locationDestination.text("Urban Jungles");
             //code
+            //append correct hotel buttons to card header
+            for (cardNumber = 0; cardNumber < 5; cardNumber++) {
+                // change the class names
+                var urbanNamesHotel = ["#sydney", "#newYork", "#blueLagoon", "#boracayBeach", "#seychelles","#blueBeach"]
+                var hotelButtonSelect = $("#hotelButton-" + cardNumber)
+                 $(hotelButtonSelect).attr("data-target", beachNamesHotel[cardNumber]);
+
+
+            };
+            
+
             break;
         case "mountain":
             locationIDArray = mountainsRiverID;
@@ -214,6 +238,17 @@ $(document).ready(function () {
             locationNames = mountainsRiversNames;
             locationDestination.text("Mountain Hikes");
             //code
+            //append correct hotel buttons to card header
+            for (cardNumber = 0; cardNumber < 5; cardNumber++) {
+                // change the class names
+                var beachNamesHotel = ["#monkeyBeach", "#turtleBeach", "#blueLagoon", "#boracayBeach", "#seychelles","#blueBeach"]
+                var hotelButtonSelect = $("#hotelButton-" + cardNumber)
+                 $(hotelButtonSelect).attr("data-target", beachNamesHotel[cardNumber]);
+
+
+            };
+
+
             break;
 
 
