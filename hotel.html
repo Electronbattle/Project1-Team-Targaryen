@@ -1,1204 +1,1630 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hotels</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-
-                <!--Hotel Info Modal-->
-                <div class="modal fade" id="monkeyBeach" tabindex="-1" role="dialog" aria-labelledby="monkeyBeachLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="monkeyBeachLabel">PP Princess Resort</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body"><img class="img-fluid"
-                                    src="assets/hotel-images/monkey_beach_hotel.jpg" style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <img class="img-fluid" src="assets/hotel-images/monkey_beach_hotel_2.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <p>Come and stay at this very affordable casual beachfront hotel with open-air dining,
-                                    infinity pool with a swim-up bar. Choose from variety of luxury, simply natural and
-                                    modern designed rooms suitable for all ages. Great breakfast, great location! 4
-                                    stars! Only $82 per room!</p>
-
-                                <a href="https://www.ppprincess.com/rooms/rooms/" target="_blank">Click here to
-                                    book!</a>
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="monkeyBeach"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="monkeyBeachLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="monkeyBeachLabel">
+                    PP Princess Resort
+                  </h5>
+                  <button
+                    type="button"
+                    id="monkey-beach-button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/monkey_beach_hotel.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/monkey_beach_hotel_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Come and stay at this very affordable casual beachfront
+                    hotel with open-air dining, infinity pool with a swim-up
+                    bar. Choose from variety of luxury, simply natural and
+                    modern designed rooms suitable for all ages. Great
+                    breakfast, great location! 4 stars! Only $82 per room!
+                  </p>
+
+                  <a
+                    href="https://www.ppprincess.com/rooms/rooms/"
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!--Button that triggers modal-->
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#monkeyBeach">Hotel
-                    Info</button>
-            </div>
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            id="hotelButton-0"
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#monkeyBeach"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-12">
-
-                <!--Hotel Info Modal-->
-                <div class="modal fade" id="turtleBeach" tabindex="-1" role="dialog" aria-labelledby="turtleBeachLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="turtleBeachLabel">Holiday Inn Resort Phuket Mai Khao Beach
-                                </h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body"><img class="img-fluid"
-                                    src="assets/hotel-images/turtle_beach_hotel.jpg" style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <img class="img-fluid" src="assets/hotel-images/turtle_beach_cafe.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <p>This contemporary beach resort has it all for a low price. Right on a pristine beach,
-                                    enjoy the luxury rooms and plethora of amenities this resort has to offer. Direct
-                                    access to the beach, large infinity pool, swim-up bar, great breakfast, and many
-                                    more. 4-star hotel for $72 per night!
-                                </p>
-
-                                <a href="https://phuketmaikhaobeach.holidayinnresorts.com/
-                                " target="_blank">Click here to
-                                    book!</a>
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="turtleBeach"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="turtleBeachLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="turtleBeachLabel">
+                    Holiday Inn Resort Phuket Mai Khao Beach
+                  </h5>
+                  <button
+                    type="button"
+                    id="turtle-beach-button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/turtle_beach_hotel.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/turtle_beach_cafe.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This contemporary beach resort has it all for a low price.
+                    Right on a pristine beach, enjoy the luxury rooms and
+                    plethora of amenities this resort has to offer. Direct
+                    access to the beach, large infinity pool, swim-up bar, great
+                    breakfast, and many more. 4-star hotel for $72 per night!
+                  </p>
+
+                  <a
+                    href="https://phuketmaikhaobeach.holidayinnresorts.com/
+                                "
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!--Button that triggers modal-->
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#turtleBeach">Hotel
-                    Info</button>
-            </div>
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+          id="hotelButton-1"
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#turtleBeach"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-12">
-
-                <!--Hotel Info Modal-->
-                <div class="modal fade" id="blueLagoon" tabindex="-1" role="dialog" aria-labelledby="blueLagoonLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="blueLagoonLabel">Bloo Lagoon Eco Village</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body"><img class="img-fluid" src="assets/hotel-images/bloo_lagoon_phi.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <img class="img-fluid" src="assets/hotel-images/bloo_lagoon_phi_2.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <p>This eco-village offers luxury of a 4-star hotel while it is an ecologically
-                                    conscious and serene place. Stay in the open spaces that flow indoors to outdoors
-                                    and are suitable for everyone! Enjoy outdoor bathing surrounded by lush vegetation
-                                    or lounging on the swimming pool shore. Great choice for $92 per night!
-                                </p>
-
-                                <a href="https://bloolagoon.com/" target="_blank">Click here to
-                                    book!</a>
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="blueLagoon"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="blueLagoonLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="blueLagoonLabel">
+                    Bloo Lagoon Eco Village
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/bloo_lagoon_phi.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/bloo_lagoon_phi_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This eco-village offers luxury of a 4-star hotel while it is
+                    an ecologically conscious and serene place. Stay in the open
+                    spaces that flow indoors to outdoors and are suitable for
+                    everyone! Enjoy outdoor bathing surrounded by lush
+                    vegetation or lounging on the swimming pool shore. Great
+                    choice for $92 per night!
+                  </p>
+
+                  <a href="https://bloolagoon.com/" target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!--Button that triggers modal-->
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blueLagoon">Hotel
-                    Info</button>
-            </div>
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            id="hotelButton-2"
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#blueLagoon"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-12">
-
-                <!--Hotel Info Modal-->
-                <div class="modal fade" id="boracayBeach" tabindex="-1" role="dialog"
-                    aria-labelledby="boracayBeachLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="boracayBeachLabel">Fairways & Bluewater Boracay</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body"><img class="img-fluid"
-                                    src="assets/hotel-images/fairways-and-bluewater-teasers-00.jpg" style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <img class="img-fluid" src="assets/hotel-images/fairways-and-bluewater-teasers-01.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <p>This eco-friendly resort is presenting you with contemporary rooms infinity pools,
-                                    restaurants, spas, water sports facilities and a world-class 18-hole championship
-                                    golf course. The Boracay private white-sand beach is also yours for the taking.
-                                    Great luxury for a $90 per night! 4-star hotel!
-                                </p>
-
-                                <a href="https://www.fairwaysandbluewater.com.ph/
-                                " target="_blank">Click here to
-                                    book!</a>
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="boracayBeach"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="boracayBeachLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="boracayBeachLabel">
+                    Fairways & Bluewater Boracay
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/fairways-and-bluewater-teasers-00.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/fairways-and-bluewater-teasers-01.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This eco-friendly resort is presenting you with contemporary
+                    rooms infinity pools, restaurants, spas, water sports
+                    facilities and a world-class 18-hole championship golf
+                    course. The Boracay private white-sand beach is also yours
+                    for the taking. Great luxury for a $90 per night! 4-star
+                    hotel!
+                  </p>
+
+                  <a
+                    href="https://www.fairwaysandbluewater.com.ph/
+                                "
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!--Button that triggers modal-->
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#boracayBeach">Hotel
-                    Info</button>
-            </div>
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            id="hotelButton-3"
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#boracayBeach"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-12">
-
-                <!--Hotel Info Modal-->
-                <div class="modal fade" id="seychelles" tabindex="-1" role="dialog" aria-labelledby="seychellesLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="seychellesLabel">Seachell Beach Villa</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body"><img class="img-fluid" src="assets/hotel-images/seychelle_hotel.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <img class="img-fluid" src="assets/hotel-images/seychelles_hotel_2.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <p>This is a great hotel for a great value! Laid-back, beautiful rooms in a relaxed
-                                    beachfront hotel facing the Indian Ocean, offering free Wi-Fi. For only $120 per night,it is a great find in
-                                    this high-priced area! The villa is self-catering, comprising of fully equipped
-                                    kitchen to prepare your food of choice. 4 stars hotel!
-                                </p>
-
-                                <a href="https://www.seashellbeachvilla.com" target="_blank">Click here to
-                                    book!</a>
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="seychelles"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="seychellesLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="seychellesLabel">
+                    Seachell Beach Villa
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/seychelle_hotel.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/seychelles_hotel_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This is a great hotel for a great value! Laid-back,
+                    beautiful rooms in a relaxed beachfront hotel facing the
+                    Indian Ocean, offering free Wi-Fi. For only $120 per
+                    night,it is a great find in this high-priced area! The villa
+                    is self-catering, comprising of fully equipped kitchen to
+                    prepare your food of choice. 4 stars hotel!
+                  </p>
+
+                  <a href="https://www.seashellbeachvilla.com" target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!--Button that triggers modal-->
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#seychelles">Hotel
-                    Info</button>
-            </div>
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            id="hotelButton-4"
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#seychelles"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-12">
-
-                <!--Hotel Info Modal-->
-                <div class="modal fade" id="blueBeach" tabindex="-1" role="dialog" aria-labelledby="blueBeachLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="blueBeachLabel">Yacht Classic Hotel</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body"><img class="img-fluid"
-                                    src="assets/hotel-images/yacht_hotel_turkey.jpg" style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <img class="img-fluid" src="assets/hotel-images/yacht_hotel_turkey_2.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <p>This newly renovated hotel offers luxury rooms with the unique sea view. Stay and
-                                    enjoy quality of boutique hotel for only $89 per night! Swimming pool, located in
-                                    the garden section, as well as sun tanning areas, pool bar, and restaurants are just
-                                    a few amenities to name. 4-star hotel!!
-                                </p>
-
-                                <a href="http://www.yachtclassichotel.com/index-eng.aspx" target="_blank">Click here to
-                                    book!</a>
-
-
-
-
-
-
-
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="blueBeach"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="blueBeachLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="blueBeachLabel">
+                    Yacht Classic Hotel
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/yacht_hotel_turkey.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/yacht_hotel_turkey_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This newly renovated hotel offers luxury rooms with the
+                    unique sea view. Stay and enjoy quality of boutique hotel
+                    for only $89 per night! Swimming pool, located in the garden
+                    section, as well as sun tanning areas, pool bar, and
+                    restaurants are just a few amenities to name. 4-star hotel!!
+                  </p>
+
+                  <a
+                    href="http://www.yachtclassichotel.com/index-eng.aspx"
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!--Button that triggers modal-->
-        <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blueBeach">Hotel
-                    Info</button>
-            </div>
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            id="hotelButton-5"
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#blueBeach"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-12">
-
-                <!--Hotel Info Modal-->
-                <div class="modal fade" id="sydney" tabindex="-1" role="dialog" aria-labelledby="sydneyLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="sydneyLabel">Megaboom City Hotel</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body"><img class="img-fluid" src="assets/hotel-images/sydney_room.jpg"
-                                    style="width:100%">
-
-                                <br>
-                                <br>
-
-
-                                <img class="img-fluid" src="assets/hotel-images/sydney_building.jpg" style="width:100%">
-
-                                <br>
-                                <br>
-
-                                <p>Megaboom City Hotel is ideally located near Sydney’s most popular tourist
-                                    attractions. The hotel’s amenities include free unlimited Wi-Fi, concierge service,
-                                    and soundproof rooms. It has gotten great reviews and offers rates as low as $72.70
-                                    a night for a Superior King Room.
-
-                                </p>
-
-                                <a href="http://www.megaboomcityhotel.com.au/" target="_blank">Click here to
-                                    book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    
-                                </div>
-    
-    
-                            </div>
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="sydney"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="sydneyLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="sydneyLabel">
+                    Megaboom City Hotel
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-            </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/sydney_room.jpg"
+                    style="width:100%"
+                  />
 
+                  <br />
+                  <br />
 
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sydney">Hotel
-                        Info</button>
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/sydney_building.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Megaboom City Hotel is ideally located near Sydney’s most
+                    popular tourist attractions. The hotel’s amenities include
+                    free unlimited Wi-Fi, concierge service, and soundproof
+                    rooms. It has gotten great reviews and offers rates as low
+                    as $72.70 a night for a Superior King Room.
+                  </p>
+
+                  <a href="http://www.megaboomcityhotel.com.au/" target="_blank"
+                    >Click here to book!</a
+                  >
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="newYork" tabindex="-1" role="dialog" aria-labelledby="newYorkLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="newYorkLabel">AirTrain Plaza Hotel JFK Airport</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid" src="assets/hotel-images/nyc_room.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/nyc_building (1).jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>
-                                        This 4-star hotel is located near JFK Airport and only 5 miles from Arthur Ashe
-                                        Stadium. Amenities include free Wi-Fi, a 24-hour front desk, and continental
-                                        breakfast. Rate of $111 per night, an excellent deal for a 4-star hotel in New
-                                        York City.
-                                    </p>
-
-                                    <a href="https://live.ipms247.com/booking/book-rooms-airtrainplazahotel"
-                                        target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
+              </div>
             </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newYork">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="paris" tabindex="-1" role="dialog" aria-labelledby="parisLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="parisLabel">Hôtel Les Herbes Folles</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid" src="assets/hotel-images/paris_room.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/paris_building.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>
-                                        This 4-star hotel is only 6.2 miles from the A1 motorway, a 3-minute drive from
-                                        Roissy Airport, and a 30-minute drive from Paris and Disneyland. Amenities
-                                        include a business center, terrace, free private parking, and breakfast every
-                                        morning. Only $107 a night!
-                                    </p>
-
-                                    <a href="http://www.hotelherbesfolles.fr/" target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#paris">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="tokyo" tabindex="-1" role="dialog" aria-labelledby="tokyoLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="tokyoLabel">Hotel Mystays Premier Narita</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid" src="assets/hotel-images/tokyo_room.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/tokyo_building.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>This top-rated, 4-star hotel is in close proximity to many wonders of Tokyo.
-                                        Amenities include complimentary Wi-Fi, a gift/souvenir shop, an indoor swimming
-                                        pool, sauna and massage! Only $53 a night (5900 Japanese yen), a fantastic deal!
-                                    </p>
-
-                                    <a href="https://www.mystays.com/en-us/hotel-mystays-premier-narita-chiba/"
-                                        target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tokyo">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="saigon" tabindex="-1" role="dialog" aria-labelledby="saigonLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="saigonLabel">Orchids Saigon Hotel</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid"
-                                        src="assets/hotel-images/ho_chi_minh_room.jpg" style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/ho_chi_minh_building.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>COnly 7 miles from the Tan Son Nhat International Airport, this 4-star hotel is a
-                                        guest favorite for travelers to Ho Chi Minh City. Amenities include a fitness
-                                        center, garden, and indoor pool. Only $80 a night!</p>
-
-                                    <a href="http://orchidshotelsaigon.com/" target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saigon">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="berlin" tabindex="-1" role="dialog" aria-labelledby="berlinLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="berlinLabel">Mercure Berlin Wittenbergplatz</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid" src="assets/hotel-images/berlin_room.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/berlin_building.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>This top-rated, 4-star hotel in the Schöneberg district in Berlin is just a
-                                        1-minute walk from the KaDeWe and the Kurfürstendamm-boulevard. Amenities
-                                        include free Wi-Fi, pets allowed, and non-smoking and hypoallergenic rooms
-                                        available. Only $91 a night!
-                                    </p>
-
-                                    <a href="https://www.accorhotels.com/gb/hotel-9147-mercure-hotel-berlin-wittenbergplatz/index.shtml"
-                                        target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#berlin">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="rockyMountains" tabindex="-1" role="dialog"
-                        aria-labelledby="rockyMountainsLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="rockyMountainsLabel">The Angler Inn</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid"
-                                        src="assets/hotel-images/rockies_anglerinn.jpg" style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/rockies_anglerinn_3.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>This cozy Inn is a great place to start your exploration of Telluride and the stunning San Juan Mountains. Great price of $95 per room for a 4 star hotel in the upscale area! Enjoy the awesome stuff this hotel offers: free wi-fi, garden with fire pit and games. Pet friendly!!
-                                    </p>
-
-                                    <a href="http://www.theanglerinn.com/
-                                    " target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#rockyMountains">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="theAlps" tabindex="-1" role="dialog" aria-labelledby="theAlpsLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="theAlpsLabel"> Excelsior Chamonix Hôtel & Spa****
-                                    </h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid"
-                                        src="assets/hotel-images/chamonix_excelsior.jpg" style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/chamonix_2.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>Great find for a great price! With its architecture from the beginning of the 20th century, Excelsior Chamonix Hôtel & Spa**** will show you one of the finest point of view on the Mont-Blanc. Stay and enjoy the luxuries of spa, outdoor heated pool, gourmet restaurant in house and many other amenities this hotel offers. Pet friendly, 4-star hotel!!</p>
-
-                                    <a href="https://www.hotelexcelsior-chamonix.com/en/
-                                    " target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#theAlps">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="carpathianMountains" tabindex="-1" role="dialog"
-                        aria-labelledby="carpathianMountainsLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="carpathianMountainsLabel">Teleferic Grand Hotel</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid"
-                                        src="assets/hotel-images/carpathian.jpg" style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/carpathian_2.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>With contemporary chalet-style architecture, this elegant hotel is a 3-minute walk from the Postăvaru Expres ski gondola and 14 km from Brașov's Black Church in Transylvania. Stay and enjoy spa, sauna, ski rental, indoor pool and many more luxury amenities this hotel has to offer.
-                                        A 4-star grand hotel for only $90 per room!
-                                        </p>
-
-                                    <a href="https://www.telefericgrandhotel.ro/en/" target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#carpathianMountains">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="elCapitan" tabindex="-1" role="dialog" aria-labelledby="elCapitanLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="elCapitanLabel">The Mariposa Lodge</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid"
-                                        src="assets/hotel-images/mariposa_lodge_(2_of_1).jpg" style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/mariposa_lodge_(1_of_1)-3.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>Only 23 miles from El Capitan, this lodge a excellent find for a very low price. This clean, pet friendly and relaxing retreat is within walking distance to Mariposa shopping and dining and offers all you need for your Yosemite stay. Only $79 per night, look no further!
-                                    </p>
-
-                                    <a href="https://www.mariposalodge.com/
-                                    " target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#elCapitan">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="himalaya" tabindex="-1" role="dialog" aria-labelledby="himalayaLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="himalayaLabel">Dom Himalaya Hotel</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid"
-                                        src="assets/hotel-images/himalaya.JPG" style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/himalaya_2.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>Start your Himalayan adventure in this great hotel in Kathmandu.With starting price of only $41 per room, this 4-star hotel amenities include a guests-only rooftop courtyard garden, sundeck, and a healing center outfitted with the traditional Tibetan Singing Bowls equipment and SPA.</p>
-
-                                    <a href="https://www.domhimalayahotel.com/
-                                    " target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#himalaya">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-                    <!--Hotel Info Modal-->
-                    <div class="modal fade" id="pyrenees" tabindex="-1" role="dialog" aria-labelledby="pyreneesLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="pyreneesLabel"> Font d’Argent Pas de la Casa 4*</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body"><img class="img-fluid"
-                                        src="assets/hotel-images/pyrenees.jpg" style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <img class="img-fluid" src="assets/hotel-images/pyrenees_2.jpg"
-                                        style="width:100%">
-
-                                    <br>
-                                    <br>
-
-
-                                    <p>The Hotel Font d’Argent Pas de la Casa 4* is located in Pas de la Casa, a few meters from the ski slopes of Grandvalira, the largest ski area in the Pyrenees. The Hotel offers all advantages and comforts so that your holidays in Andorra are perfect: tasty, good quality cuisine, Wellness area, play spaces for the little ones and an excellent location in the centre of Pas de Casa. Enjoy all the 4 star amenities for $89 only!</p>
-
-                                    <a href="https://www.hotelfontdargentpasdelacasa.com/en/
-                                    " target="_blank">Click here to
-                                        book!</a>
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!--Button that triggers modal-->
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pyrenees">Hotel
-                        Info</button>
-                </div>
-            </div>
-
-
-
+          </div>
         </div>
+      </div>
 
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#sydney"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
 
-</body>
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="newYork"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="newYorkLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="newYorkLabel">
+                    AirTrain Plaza Hotel JFK Airport
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/nyc_room.jpg"
+                    style="width:100%"
+                  />
 
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/nyc_building (1).jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This 4-star hotel is located near JFK Airport and only 5
+                    miles from Arthur Ashe Stadium. Amenities include free
+                    Wi-Fi, a 24-hour front desk, and continental breakfast. Rate
+                    of $111 per night, an excellent deal for a 4-star hotel in
+                    New York City.
+                  </p>
+
+                  <a
+                    href="https://live.ipms247.com/booking/book-rooms-airtrainplazahotel"
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#newYork"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="paris"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="parisLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="parisLabel">
+                    Hôtel Les Herbes Folles
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/paris_room.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/paris_building.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This 4-star hotel is only 6.2 miles from the A1 motorway, a
+                    3-minute drive from Roissy Airport, and a 30-minute drive
+                    from Paris and Disneyland. Amenities include a business
+                    center, terrace, free private parking, and breakfast every
+                    morning. Only $107 a night!
+                  </p>
+
+                  <a href="http://www.hotelherbesfolles.fr/" target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#paris"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="tokyo"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="tokyoLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="tokyoLabel">
+                    Hotel Mystays Premier Narita
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/tokyo_room.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/tokyo_building.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This top-rated, 4-star hotel is in close proximity to many
+                    wonders of Tokyo. Amenities include complimentary Wi-Fi, a
+                    gift/souvenir shop, an indoor swimming pool, sauna and
+                    massage! Only $53 a night (5900 Japanese yen), a fantastic
+                    deal!
+                  </p>
+
+                  <a
+                    href="https://www.mystays.com/en-us/hotel-mystays-premier-narita-chiba/"
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#tokyo"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="saigon"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="saigonLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="saigonLabel">
+                    Orchids Saigon Hotel
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/ho_chi_minh_room.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/ho_chi_minh_building.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    COnly 7 miles from the Tan Son Nhat International Airport,
+                    this 4-star hotel is a guest favorite for travelers to Ho
+                    Chi Minh City. Amenities include a fitness center, garden,
+                    and indoor pool. Only $80 a night!
+                  </p>
+
+                  <a href="http://orchidshotelsaigon.com/" target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#saigon"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="berlin"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="berlinLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="berlinLabel">
+                    Mercure Berlin Wittenbergplatz
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/berlin_room.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/berlin_building.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This top-rated, 4-star hotel in the Schöneberg district in
+                    Berlin is just a 1-minute walk from the KaDeWe and the
+                    Kurfürstendamm-boulevard. Amenities include free Wi-Fi, pets
+                    allowed, and non-smoking and hypoallergenic rooms available.
+                    Only $91 a night!
+                  </p>
+
+                  <a
+                    href="https://www.accorhotels.com/gb/hotel-9147-mercure-hotel-berlin-wittenbergplatz/index.shtml"
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#berlin"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="rockyMountains"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="rockyMountainsLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="rockyMountainsLabel">
+                    The Angler Inn
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/rockies_anglerinn.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/rockies_anglerinn_3.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    This cozy Inn is a great place to start your exploration of
+                    Telluride and the stunning San Juan Mountains. Great price
+                    of $95 per room for a 4 star hotel in the upscale area!
+                    Enjoy the awesome stuff this hotel offers: free wi-fi,
+                    garden with fire pit and games. Pet friendly!!
+                  </p>
+
+                  <a
+                    href="http://www.theanglerinn.com/
+                                    "
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#rockyMountains"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="theAlps"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="theAlpsLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="theAlpsLabel">
+                    Excelsior Chamonix Hôtel & Spa****
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/chamonix_excelsior.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/chamonix_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Great find for a great price! With its architecture from the
+                    beginning of the 20th century, Excelsior Chamonix Hôtel &
+                    Spa**** will show you one of the finest point of view on the
+                    Mont-Blanc. Stay and enjoy the luxuries of spa, outdoor
+                    heated pool, gourmet restaurant in house and many other
+                    amenities this hotel offers. Pet friendly, 4-star hotel!!
+                  </p>
+
+                  <a
+                    href="https://www.hotelexcelsior-chamonix.com/en/
+                                    "
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#theAlps"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="carpathianMountains"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="carpathianMountainsLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="carpathianMountainsLabel">
+                    Teleferic Grand Hotel
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/carpathian.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/carpathian_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    With contemporary chalet-style architecture, this elegant
+                    hotel is a 3-minute walk from the Postăvaru Expres ski
+                    gondola and 14 km from Brașov's Black Church in
+                    Transylvania. Stay and enjoy spa, sauna, ski rental, indoor
+                    pool and many more luxury amenities this hotel has to offer.
+                    A 4-star grand hotel for only $90 per room!
+                  </p>
+
+                  <a
+                    href="https://www.telefericgrandhotel.ro/en/"
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#carpathianMountains"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="elCapitan"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="elCapitanLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="elCapitanLabel">
+                    The Mariposa Lodge
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/mariposa_lodge_(2_of_1).jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/mariposa_lodge_(1_of_1)-3.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Only 23 miles from El Capitan, this lodge a excellent find
+                    for a very low price. This clean, pet friendly and relaxing
+                    retreat is within walking distance to Mariposa shopping and
+                    dining and offers all you need for your Yosemite stay. Only
+                    $79 per night, look no further!
+                  </p>
+
+                  <a
+                    href="https://www.mariposalodge.com/
+                                    "
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#elCapitan"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="himalaya"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="himalayaLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="himalayaLabel">
+                    Dom Himalaya Hotel
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/himalaya.JPG"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/himalaya_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    Start your Himalayan adventure in this great hotel in
+                    Kathmandu.With starting price of only $41 per room, this
+                    4-star hotel amenities include a guests-only rooftop
+                    courtyard garden, sundeck, and a healing center outfitted
+                    with the traditional Tibetan Singing Bowls equipment and
+                    SPA.
+                  </p>
+
+                  <a
+                    href="https://www.domhimalayahotel.com/
+                                    "
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#himalaya"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!--Hotel Info Modal-->
+          <div
+            class="modal fade"
+            id="pyrenees"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="pyreneesLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pyreneesLabel">
+                    Font d’Argent Pas de la Casa 4*
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/pyrenees.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <img
+                    class="img-fluid"
+                    src="assets/hotel-images/pyrenees_2.jpg"
+                    style="width:100%"
+                  />
+
+                  <br />
+                  <br />
+
+                  <p>
+                    The Hotel Font d’Argent Pas de la Casa 4* is located in Pas
+                    de la Casa, a few meters from the ski slopes of Grandvalira,
+                    the largest ski area in the Pyrenees. The Hotel offers all
+                    advantages and comforts so that your holidays in Andorra are
+                    perfect: tasty, good quality cuisine, Wellness area, play
+                    spaces for the little ones and an excellent location in the
+                    centre of Pas de Casa. Enjoy all the 4 star amenities for
+                    $89 only!
+                  </p>
+
+                  <a
+                    href="https://www.hotelfontdargentpasdelacasa.com/en/
+                                    "
+                    target="_blank"
+                    >Click here to book!</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Button that triggers modal-->
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-outline-blue-grey float-left"
+            data-toggle="modal"
+            data-target="#pyrenees"
+          >
+            <i class="fas fa-hotel"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/script/destinationsPage.js"></script>
+  </body>
 </html>

@@ -79,11 +79,11 @@ $(document).ready(function () {
   $('#commentModal').on('show.bs.modal', function (event) {
     newComment = $(event.relatedTarget).data(newComment),
     modal = $(this)
-    $("#beach").modal({
-      keyboard:false,
-      backdrop:false
+    // $("#beach").modal({
+    //   keyboard:false,
+    //   backdrop:false
      
 
   });
 })
-})
+// })

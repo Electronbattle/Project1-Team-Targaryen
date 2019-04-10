@@ -47,10 +47,8 @@ var baseURLPhotos = "https://maps.googleapis.com/maps/api/place/photo?";
 var maxWidth = "maxwidth=400&"
 var maxHeight = "maxheight=400&"
 
-var apiKey = "&key=AIzaSyAEa3mcJXIQ3rK8EMHKHjEFCuXuw3KJT14";
-
 // cross page var
-var locationType = window.location.hash.substring(1)
+var locationType = window.location.hash.substring(1);
 
 function populatePictures() {
     console.log("running populate pictures")
@@ -61,99 +59,129 @@ function populatePictures() {
         //forming the URL to pass into the AJAX call
         var queryURL = baseURL + placeID + locationIDArray[locationIndex] + apiKey;
 
-        // AJAX Call for google places details api
 
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (responsePlaces) {
+        //fetch grabbing google places api
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        const url = queryURL; // site that doesn’t send Access-Control-*
+        fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
+            .then(response => response.text())
+            .then(function (contents) {
 
-
-            var parsedPlaceID = responsePlaces.result.place_id
-
-            if (locationIDArray.includes(parsedPlaceID)) {
-
-                var carouselToUse = locationIDArray.indexOf(parsedPlaceID);
+                var response = JSON.parse(contents);
+                console.log(response)
 
 
+                var parsedPlaceID = response.result.place_id
 
-                //append correct destination type to the page
-                
-                
+                if (locationIDArray.includes(parsedPlaceID)) {
 
-
-                //append correct titles to the location in HTML
-                var titleSelect = ("#header-" + carouselToUse);
-                var title = $(titleSelect);
-                var newTitle = $(title).text(locationNames[carouselToUse]);
-                
+                    var carouselToUse = locationIDArray.indexOf(parsedPlaceID);
 
 
 
-                // append correct summarries to the location in HTML
-                
-                //target summary class, populate with summary array
-                var cardbodyIDselect = ("#summary-" + carouselToUse);
-                var cardbody = $(cardbodyIDselect);
-                var newSummary = $(cardbody).text(locationSummary[carouselToUse]);
-                newSummary.attr("class", "card-text");
-                newSummary.attr("id", "summary-" + carouselToUse);
-                cardbody.prepend(newSummary);
-                
-                
-
-                //append correct weather to the location in HTML
+                    //append correct destination type to the page
 
 
 
 
-            };
-            /*  //grabbing lat and lng for weather
-              var weatherLat = responsePlaces.result.geometry.location.lat;
-              var weatherLng = responsePlaces.result.geometry.location.lng;
-              var urlLat = "&lat=" + weatherLat;
-              var urlLng = "&lon=" + weatherLng;
-  
-  
-              var queryURLWeather = baseWeatherURL + urlLat + urlLng + urlKey;
-  
-              $.ajax({
-                  url: queryURLWeather,
-                  method: "GET",
-              }).then(function (responseWeather) {
-  
-                  console.log(responseWeather);
-                  //push to html
-  
-  
-              }); */
-
-
-            for (photoReferenceIndex = 0; photoReferenceIndex < 10; photoReferenceIndex++) {
+                    //append correct titles to the location in HTML
+                    var titleSelect = ("#header-" + carouselToUse);
+                    var title = $(titleSelect);
+                    var newTitle = $(title).text(locationNames[carouselToUse]);
 
 
 
-                var photoReference = responsePlaces.result.photos[photoReferenceIndex].photo_reference;
-                // append to images correct carousel in the html
 
-                var idToSelectForImage = ("#carousel-" + carouselToUse + "-" + photoReferenceIndex)
-                var imageSelect = $(idToSelectForImage);
+                    // append correct summarries to the location in HTML
 
-                var photoReferenceInput = "photoreference=" + photoReference;
-                var SrcURLPhoto = baseURLPhotos + maxWidth + maxHeight + photoReferenceInput + apiKey;
-
-                imageSelect.attr("src", SrcURLPhoto);
+                    //target summary class, populate with summary array
+                    var cardbodyIDselect = ("#summary-" + carouselToUse);
+                    var cardbody = $(cardbodyIDselect);
+                    var newSummary = $(cardbody).text(locationSummary[carouselToUse]);
+                    newSummary.attr("class", "card-text");
+                    newSummary.attr("id", "summary-" + carouselToUse);
+                    cardbody.prepend(newSummary);
 
 
 
 
 
 
+                    //append correct weather to the location in HTML
 
 
-            };
 
-        });
+
+                };
+                //grabbing lat and lng for weather
+                var weatherLat = response.result.geometry.location.lat;
+                var weatherLng = response.result.geometry.location.lng;
+                var urlLat = "&lat=" + weatherLat;
+                var urlLng = "&lon=" + weatherLng;
+
+
+                var queryURLWeather = baseWeatherURL + urlLat + urlLng + urlKey;
+
+                $.ajax({
+                    url: queryURLWeather,
+                    method: "GET"
+
+                }).then(function (responseWeather) {
+
+                    console.log(responseWeather);
+                    //push to html weather
+
+                    var weatherSelect = $("#weather-" + carouselToUse);
+                    var weatherSelect1 = $("#weather1-" + carouselToUse);
+                    var weatherSelect2 = $("#weather2-" + carouselToUse);
+                    var weatherSelect3 = $("#weather3-" + carouselToUse);
+                    var weatherSelect4 = $("#weather4-" + carouselToUse);
+                    var weather = $(weatherSelect);
+                    var weather1 = $(weatherSelect1);
+                    var weather2 = $(weatherSelect2);
+                    var weather3 = $(weatherSelect3);
+                    var weather4 = $(weatherSelect4);
+                    weather.text("Current Description: " + responseWeather.weather[0].description);
+                    weather1.text("Current Temp: " + responseWeather.main.temp + " °F");
+                    weather2.text("High/Low: " + responseWeather.main.temp_max + "°F" + "/" + responseWeather.main.temp_min + "°F");
+                    weather3.text("Humidity: " + responseWeather.main.humidity + "%");
+                    weather4.text("Wind Speed: " + responseWeather.wind.speed + " mph");
+                    var iconSelect = $("#icon-" + carouselToUse);
+                    var iconSrc = $(iconSelect).attr("src", "http://openweathermap.org/img/w/" + responseWeather.weather[0].icon + ".png");
+
+
+
+
+
+
+                });
+
+
+                for (photoReferenceIndex = 0; photoReferenceIndex < 10; photoReferenceIndex++) {
+
+
+
+                    var photoReference = response.result.photos[photoReferenceIndex].photo_reference;
+                    // append to images correct carousel in the html
+
+                    var idToSelectForImage = ("#carousel-" + carouselToUse + "-" + photoReferenceIndex)
+                    var imageSelect = $(idToSelectForImage);
+
+                    var photoReferenceInput = "photoreference=" + photoReference;
+                    var SrcURLPhoto = baseURLPhotos + maxWidth + maxHeight + photoReferenceInput + apiKey;
+                    imageSelect.attr("class", "sizeDefault");
+                    imageSelect.attr("src", SrcURLPhoto);
+
+
+
+
+
+
+
+
+                };
+
+            });
     };
 };
 
@@ -171,6 +199,17 @@ $(document).ready(function () {
             locationSummary = beachSummary;
             locationNames = beachNames;
             locationDestination.text("Tropical Beaches");
+
+            //append correct hotel buttons to card header
+            for (cardNumber = 0; cardNumber < 5; cardNumber++) {
+                // change the class names
+                console.log("test")
+                var cardHeaderSelect = $("#hotelButton-" + cardNumber);
+                var buttonTarget = $(".buttonTarget" + cardNumber);
+                buttonTarget.append(cardHeaderSelect);
+
+            };
+
 
             //code
             break;
