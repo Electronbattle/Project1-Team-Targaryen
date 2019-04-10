@@ -104,6 +104,9 @@ function populatePictures() {
 
 
 
+
+
+
                     //append correct weather to the location in HTML
 
 
@@ -166,7 +169,7 @@ function populatePictures() {
 
                     var photoReferenceInput = "photoreference=" + photoReference;
                     var SrcURLPhoto = baseURLPhotos + maxWidth + maxHeight + photoReferenceInput + apiKey;
-
+                    imageSelect.attr("class", "sizeDefault");
                     imageSelect.attr("src", SrcURLPhoto);
 
 
@@ -196,6 +199,16 @@ $(document).ready(function () {
             locationSummary = beachSummary;
             locationNames = beachNames;
             locationDestination.text("Tropical Beaches");
+
+            //append correct hotel buttons to card header
+            for (cardNumber = 0; cardNumber < 5; cardNumber++) {
+                // change the class names
+                console.log("test")
+                var cardHeaderSelect = $("#hotelButton-" + cardNumber);
+                var buttonTarget = $(".buttonTarget" + cardNumber);
+                buttonTarget.append(cardHeaderSelect);
+
+            };
 
 
             //code
