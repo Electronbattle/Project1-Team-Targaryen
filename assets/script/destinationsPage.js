@@ -223,9 +223,9 @@ $(document).ready(function () {
             //append correct hotel buttons to card header
             for (cardNumber = 0; cardNumber < 5; cardNumber++) {
                 // change the class names
-                var urbanNamesHotel = ["#sydney", "#newYork", "#blueLagoon", "#boracayBeach", "#seychelles","#blueBeach"]
+                var urbanNamesHotel = ["#sydney", "#newYork", "#paris", "#tokyo", "#saigon","#berlin"]
                 var hotelButtonSelect = $("#hotelButton-" + cardNumber)
-                 $(hotelButtonSelect).attr("data-target", beachNamesHotel[cardNumber]);
+                 $(hotelButtonSelect).attr("data-target", urbanNamesHotel[cardNumber]);
 
 
             };
@@ -241,9 +241,9 @@ $(document).ready(function () {
             //append correct hotel buttons to card header
             for (cardNumber = 0; cardNumber < 5; cardNumber++) {
                 // change the class names
-                var beachNamesHotel = ["#monkeyBeach", "#turtleBeach", "#blueLagoon", "#boracayBeach", "#seychelles","#blueBeach"]
+                var mountainNamesHotel = ["#rockyMountains", "#theAlps", "#carpathianMountains", "#elCapitan", "#himalaya","#pyrenees"]
                 var hotelButtonSelect = $("#hotelButton-" + cardNumber)
-                 $(hotelButtonSelect).attr("data-target", beachNamesHotel[cardNumber]);
+                 $(hotelButtonSelect).attr("data-target", mountainNamesHotel[cardNumber]);
 
 
             };
