@@ -76,7 +76,8 @@ footer {
 #header-0, #header-1, #header-2, #header-3, #header-4, #header-5{
 
   margin-left: 90px;
-  font-size: 20px;
+  font-size: 40px;
+  font-family: "Spectral", serif;
  }
  
  #summary-0, #summary-1, #summary-2, #summary-3, #summary-4, #summary-5{
